@@ -20,7 +20,27 @@
 
 <div id="alldiv"; style="column-count: 5;"></div>
 
+<hr>
 <h2>장르별 추천</h2>
+<select name="" id="sgenre">
+    <option value="comedy">코메디</option>
+    <option value="drama" selected>드라마</option>
+    <option value="thriller">스릴러</option>
+    <option value="animation">애니메이션</option>
+</select>
+
+<button type="button" class="btn bg-primary btn-lg"
+    onclick="MovieObject.getgenres()">장르선택</button>
+<div id="genrediv"; style="column-count: 5;"></div>
+
+<h2>영화기반 추천</h2>
+
+onclick="MovieObject.getgenres()">장르선택</button>
+<div id="getgenres"; style="column-count: 5;"></div>
+
+<h2>사용자기반 추천</h2>
+
+
 
 </body>
 </html>
