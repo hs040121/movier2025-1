@@ -16,9 +16,10 @@ let MovieObject = {
             console.log(response)
             movielist = response.result
 
-            topdiv = document.createElement("div")
-            topdiv.style = "column-count:5"
-            document.body.appendChild(topdiv)
+            // topdiv = document.createElement("div")
+            // topdiv.style = "column-count:5"
+            // document.body.appendChild(topdiv)
+            topdiv = document.getElementById("alldiv")
 
             movielist.forEach(movie => {
                 cmovie = document.createElement("div")
@@ -33,7 +34,7 @@ let MovieObject = {
                   window.open(movie.url) // 새창에서 열기
                 }
                 mimg.onmouseover = function(){
-
+                    
                 }
                 mimg.style.cursor="pointer"
                 cmovie.appendChild(mimg)
